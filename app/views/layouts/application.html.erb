@@ -10,6 +10,29 @@
   </head>
 
   <body>
+  <header>
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerSampleApp" aria-controls="navbarTogglerSampleApp" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerSampleApp">
+      <%= link_to "sample app", '#', { id: "logo", class: "navbar-brand"} %>
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <%= link_to "Home", '#', {class: "nav-link"} %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Help", '#', {class: "nav-link"} %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Log in", '#', {class: "nav-link"} %>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  </header>
+  <main class="container">
     <%= yield %>
+  </main>
   </body>
 </html>
